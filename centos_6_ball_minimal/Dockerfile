@@ -1,6 +1,6 @@
 # BALL Build Docker Image, by H.-Philipp Brachvogel 07.07.2015
 
-FROM centos_ballbuild_bare
+FROM centos_6_ball_bare
 
 RUN yum -y install boost-devel sip-devel qt-devel tbb-devel
 

@@ -1,0 +1,9 @@
+In order to enable the docker server to let containers connect to the internet
+change 
+
+/etc/default/docker
+
+to have (add the line):
+
+DOCKER_OPTS="--dns 134.2.14.4 --dns 134.2.12.17 -H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock"
+
